@@ -31,7 +31,6 @@ export const LINKS = {
   chat: sub("/playground"),
 
   // External links
-  telegram: "https://t.me/taylentai",
   email: "mailto:info@taylent.com",
 } as const;
 

@@ -19,7 +19,6 @@ import {
   GraduationCap,
   Image as ImageIcon,
   Mail,
-  Send,
 } from "lucide-react";
 import CodeBlock from "@/components/code-block";
 import { FadeUp } from "@/components/motion";
@@ -542,32 +541,23 @@ const msg = await client.messages.create({
               <div>
                 <div className="text-sm font-semibold">联系我们</div>
                 <p className="mt-1 text-sm text-[var(--mu)]">
-                  Telegram 群组实时答疑，工单 5 分钟内响应；企业合作 / 媒体对接请发邮件至{" "}
+                  技术支持、计费咨询、企业合作 / 媒体对接，请发邮件至{" "}
                   <a
                     href={LINKS.email}
                     className="text-[var(--color-primary)] underline underline-offset-4"
                   >
                     info@taylent.com
                   </a>
-                  。
+                  ，工单 5 分钟内响应。
                 </p>
               </div>
-              <div className="grid grid-cols-2 sm:flex items-stretch gap-2 w-full sm:w-auto self-stretch sm:self-auto shrink-0">
+              <div className="shrink-0">
                 <a
                   href={LINKS.email}
-                  className="btn-ghost h-10 px-5 rounded-lg text-sm font-medium inline-flex items-center justify-center gap-2 whitespace-nowrap"
+                  className="btn-primary h-10 px-5 rounded-lg text-sm font-medium inline-flex items-center justify-center gap-2 whitespace-nowrap"
                 >
                   <Mail className="w-4 h-4" />
                   发邮件
-                </a>
-                <a
-                  href={LINKS.telegram}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="btn-primary h-10 px-5 rounded-lg text-sm font-medium inline-flex items-center justify-center gap-2 whitespace-nowrap"
-                >
-                  <Send className="w-4 h-4" />
-                  加入 Telegram
                 </a>
               </div>
             </FadeUp>

@@ -187,14 +187,14 @@ model_catalog_json = "C:\\\\Users\\\\toint\\\\.codex\\\\custom-models.json"`}
         <div>
           <div className="text-sm font-semibold">配置过程出问题？</div>
           <p className="mt-1 text-sm text-[var(--mu)]">
-            Telegram 群组在线答疑，邮件{" "}
+            邮件{" "}
             <a
               href="mailto:info@taylent.com"
               className="text-[var(--color-primary)] underline underline-offset-4"
             >
               info@taylent.com
             </a>
-            。
+            ，工单 5 分钟内响应。
           </p>
         </div>
         <Link

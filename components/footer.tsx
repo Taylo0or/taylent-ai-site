@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Send } from "lucide-react";
+import { Mail } from "lucide-react";
 import { LINKS } from "@/lib/links";
 
 export default function Footer() {
@@ -28,13 +28,12 @@ export default function Footer() {
             </p>
             <div className="mt-5 flex items-center gap-3">
               <a
-                href={LINKS.telegram}
-                target="_blank"
-                rel="noreferrer"
-                className="w-9 h-9 rounded-lg btn-ghost flex items-center justify-center"
-                aria-label="Telegram"
+                href={LINKS.email}
+                className="h-9 px-3 rounded-lg btn-ghost inline-flex items-center gap-2 text-xs"
+                aria-label="邮件联系"
               >
-                <Send className="w-4 h-4" />
+                <Mail className="w-4 h-4" />
+                <span className="font-mono">info@taylent.com</span>
               </a>
             </div>
           </div>

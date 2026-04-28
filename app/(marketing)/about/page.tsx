@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { LINKS } from "@/lib/links";
 import type { Metadata } from "next";
-import { ArrowRight, Send, Mail, Globe, Shield, Sparkles } from "lucide-react";
+import { ArrowRight, Mail, Globe, Shield, Sparkles } from "lucide-react";
 import { FadeUp } from "@/components/motion";
 
 export const metadata: Metadata = {
@@ -70,7 +70,7 @@ export default function AboutPage() {
                 Taylent 用一行环境变量，把延迟、汇率、可用性、合规这些事一次性解决。我们做的就是 — 让你能像调用 localhost 一样调用 Claude、GPT、Gemini 和 Grok。
               </p>
               <p className="text-[var(--mu)]">
-                如果有任何关于工程实现、计费规则、或是企业合作的问题，欢迎随时来 Telegram 找我们。
+                如果有任何关于工程实现、计费规则、或是企业合作的问题，欢迎邮件联系 <a href="mailto:info@taylent.com" className="text-[var(--color-primary)] underline underline-offset-4">info@taylent.com</a>。
               </p>
             </div>
           </FadeUp>
@@ -78,24 +78,11 @@ export default function AboutPage() {
       </section>
 
       <section className="py-16 border-t border-[var(--bd)]">
-        <div className="mx-auto max-w-4xl px-6 lg:px-8 grid md:grid-cols-3 gap-5">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8 grid md:grid-cols-2 gap-5">
           <FadeUp className="rounded-2xl glass p-6">
-            <Send className="w-5 h-5 text-[var(--color-primary)]" />
-            <div className="mt-4 text-sm font-semibold">Telegram</div>
-            <div className="text-xs text-[var(--mu)]">实时答疑，最快响应</div>
-            <a
-              href={LINKS.telegram}
-              target="_blank"
-              rel="noreferrer"
-              className="mt-4 btn-ghost px-3 py-1.5 rounded-lg text-xs inline-flex items-center gap-1.5"
-            >
-              加入群组 <ArrowRight className="w-3 h-3" />
-            </a>
-          </FadeUp>
-          <FadeUp delay={0.05} className="rounded-2xl glass p-6">
             <Mail className="w-5 h-5 text-[var(--color-primary)]" />
             <div className="mt-4 text-sm font-semibold">邮件</div>
-            <div className="text-xs text-[var(--mu)]">企业合作 / 媒体对接</div>
+            <div className="text-xs text-[var(--mu)]">技术支持 · 企业合作 · 媒体对接</div>
             <a
               href="mailto:info@taylent.com"
               className="mt-4 inline-block font-mono text-xs text-[var(--color-primary)]"
