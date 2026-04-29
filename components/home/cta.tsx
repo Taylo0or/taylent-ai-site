@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { LINKS } from "@/lib/links";
-import { ArrowRight, MessageSquare } from "lucide-react";
+import { ArrowRight, BookOpen } from "lucide-react";
 import { FadeUp } from "@/components/motion";
 
 export default function CTA() {
@@ -31,10 +31,9 @@ export default function CTA() {
               >
                 获取密钥 <ArrowRight className="w-4 h-4" />
               </a>
-              <a href={LINKS.chat} target="_top" rel="noopener" className="btn-ghost px-5 py-3 rounded-xl inline-flex items-center gap-2"
-              >
-                <MessageSquare className="w-4 h-4" /> 网页聊天
-              </a>
+              <Link href="/docs" className="btn-ghost px-5 py-3 rounded-xl inline-flex items-center gap-2">
+                <BookOpen className="w-4 h-4" /> 查看文档
+              </Link>
             </div>
           </div>
         </FadeUp>

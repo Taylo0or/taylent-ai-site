@@ -24,11 +24,10 @@ const sub = (p: string) => `${SUB2API_URL}${p}`;
 export const LINKS = {
   // sub2api-owned (open in parent window via target="_top")
   login: sub(SUB2API_LOGIN_PATH),
-  console: sub("/console"),
-  dashboard: sub("/console"), // legacy alias
-  keys: sub("/console/api-keys"),
-  billing: sub("/console/topup"),
-  chat: sub("/playground"),
+  console: sub("/dashboard"),
+  dashboard: sub("/dashboard"), // legacy alias
+  keys: sub("/keys"),
+  billing: sub("/purchase"),
 
   // External links
   email: "mailto:info@taylent.com",
